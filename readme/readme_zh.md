@@ -2,9 +2,9 @@
 
 # 目录
 
-\- [English](readme_en.md)
+\- [English](readme/readme_en.md)
 
-\- [中文](readme_zh.md)
+\- [中文](readme/readme_zh.md)
 
 # PPPwn orangepi
 
