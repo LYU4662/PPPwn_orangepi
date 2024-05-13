@@ -1,7 +1,7 @@
 #!/bin/bash
 
 ARCH=$(uname -m)
-INTERFACE="end1" 
+INTERFACE="end0" 
 FIRMWAREVERSION="11.00" 
 SHUTDOWN=true
 
