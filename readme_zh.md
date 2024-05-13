@@ -1,3 +1,11 @@
+
+
+# 目录
+
+\- [English](readme_en.md)
+
+\- [中文](readme_zh.md)
+
 # PPPwn orangepi
 
 这个脚本是基于orangepi5 **debian**系统运行PPPwn漏洞，达到自动破解的效果。其他系统应该要调整一下开机启动脚本。
