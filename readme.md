@@ -6,18 +6,22 @@
 
 \- [中文](readme.md)
 
-# PPPwn orangepi
+# 更新日志
+- 20240513 新创建仓库 默认支持aarch64架构设备
+- 20240514 增加x86、cortex-a7架构支持  再次感谢xfangfang/PPPwn_cpp
 
-这个脚本是基于orangepi5 **debian**系统运行PPPwn漏洞，达到自动破解的效果。其他系统应该要调整一下开机启动脚本。
+# PPPwn orangepi
+这个脚本初始测试于orangepi5 **debian**系统运行PPPwn漏洞，达到自动破解的效果。现支持x86、aarch64、armv7架构芯片, 其他系统应该要调整一下开机启动脚本。
 
 # 测试设备
-
+- JDC AX1800pro (openwrt) 仅进行运行测试，未测试自动关机及开机自动破解，如提示`sudo: not found` 请删除`run.sh`内的`sudo`字符
 - Orangepi 5 （debian）
 - nanopi neo2  (armbian)
-- 理论适用于aarch64架构的所有设备 (debian)
+- 适用于aarch64架构的所有设备 (debian/armbian)
+- 适用于x86_64架构的所有设备 (debian/armbian)
+- 适用于armv7(cortex-a7)架构的所有设备 (debian/armbian) 
 
 # 准备工作
-
 在自动破解之前，如果是第一次破解，你应该将支持PS4系统版本的**GOLDHEN.bin**文件放置在**exfat**的**U盘根目录**中，插入PS4的USB接口。此后不需要这步操作。
 
 ```sh

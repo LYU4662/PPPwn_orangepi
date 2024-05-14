@@ -4,15 +4,23 @@
 
 \- [中文](readme.md)
 
+# Changelog
+
+- 20240513 Newly created repositories support ARCH 64 devices by default
+- 20240514 Added support for x86 and cortex-a7 architectures, thanks again to xfangfang/PPPwn_cpp
+
 # PPPwn orangepi
 
-This script is based on the PPPwn vulnerability running on the orangepi5 **debian** system, and the effect of automatic cracking is achieved. Other systems should need to adjust the boot script.
+This script was initially tested on the orangepi5 **debian** system running PPPwn vulnerability, and the effect of automatic cracking was achieved. Now it supports x86, aarch64, armv7 architecture chips, and other systems should adjust the boot script.
 
 # Test equipment
 
-- Orangepi 5 （debian）
+- JDC AX1800pro (openwrt) only runs the test, does not test the automatic shutdown and boot automatic cracking, if the prompt `sudo: not found` is prompted, please delete the `sudo` character in the `run.sh`
+- Orangepi 5 (debian)
 - nanopi neo2  (armbian)
-- Theory applies to all devices of the aarch64 architecture (debian)
+- Works with all devices based on aarch64 architecture (Debian/Armbian)
+- Works on all devices with x86_64 architectures (Debian/Armbian)
+- Compatible with all devices with ARMv7 (Cortex-A7) architecture (Debian/Armbian) 
 
 # Preparation
 
