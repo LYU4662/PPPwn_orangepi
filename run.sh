@@ -12,7 +12,7 @@ echo -e "\033[32m|__|  |__|  |__|  |_____|_|_|  |___|_| |__,|_|_|_  |___|  _|_|\
 echo -e "\033[32m                                               |___|   |_|    \033[0m"
 
 echo -e "\033[34mhttps://github.com/LYU4662/PPPwn_orangepi.git \033[0m"
-echo -e "\033[34mThanks to https://github.com/xfangfang/PPPwn_cpp.git \n \t https://github.com/TheOfficialFloW/PPPwn.git \n \t https://github.com/stooged/PI-Pwn.git \n \t https://github.com/PSGO/PPPwnGo.git \033[0m"
+echo -e "\033[34mThanks to https://github.com/xfangfang/PPPwn_cpp.git \n \t https://github.com/TheOfficialFloW/PPPwn.git \n \t https://github.com/stooged/PI-Pwn.git \n \t https://github.com/PSGO/PPPwnGo.git  \n \t https://github.com/GoldHEN/GoldHEN/releases \033[0m"
 
 
 
