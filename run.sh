@@ -24,7 +24,7 @@ if [ "$ARCH" = "x86_64" ]; then
 	coproc read -t 2 && wait "$!" || true
 	sudo ip link set $INTERFACE up
 
-	ret=$(sudo /root/PPPwn_orangepi/PPPwn/pppwn_x86_64 --interface "$INTERFACE" --fw "${FIRMWAREVERSION//.}" --stage1 "/root/PPPwn_orangepi/PS4_stage_bin_all/PS4-$FIRMWAREVERSION/stage1/stage1.bin" --stage2 "/root/PPPwn_orangepi/PS4_stage_bin_all/PS4-$FIRMWAREVERSION/stage2/stage2.bin" --auto-retry)
+	ret=$(sudo /root/PPPwn_orangepi/PPPwn/pppwn_x86_64 --interface "$INTERFACE" --fw "${FIRMWAREVERSION//.}" --stage1 "/root/PPPwn_orangepi/PS4_stage_bin_all/PS4-$FIRMWAREVERSION/stage1/stage1.bin" --stage2 "/root/PPPwn_orangepi/PS4_stage_bin_all/PS4-$FIRMWAREVERSION/stage2/stage2.bin" --timeout 10 --auto-retry)
 
 	if [ $SHUTDOWN = true ] ; then
 		echo -e "\033[32msystem poweroff\033[0m"
@@ -39,7 +39,7 @@ elif [[ "$ARCH" == aarch64* ]]; then
 	coproc read -t 2 && wait "$!" || true
 	sudo ip link set $INTERFACE up
 
-	ret=$(sudo /root/PPPwn_orangepi/PPPwn/pppwn_aarch64 --interface "$INTERFACE" --fw "${FIRMWAREVERSION//.}" --stage1 "/root/PPPwn_orangepi/PS4_stage_bin_all/PS4-$FIRMWAREVERSION/stage1/stage1.bin" --stage2 "/root/PPPwn_orangepi/PS4_stage_bin_all/PS4-$FIRMWAREVERSION/stage2/stage2.bin" --auto-retry)
+	ret=$(sudo /root/PPPwn_orangepi/PPPwn/pppwn_aarch64 --interface "$INTERFACE" --fw "${FIRMWAREVERSION//.}" --stage1 "/root/PPPwn_orangepi/PS4_stage_bin_all/PS4-$FIRMWAREVERSION/stage1/stage1.bin" --stage2 "/root/PPPwn_orangepi/PS4_stage_bin_all/PS4-$FIRMWAREVERSION/stage2/stage2.bin" --timeout 10 --auto-retry)
 
 	if [ $SHUTDOWN = true ] ; then
 		echo -e "\033[32msystem poweroff\033[0m"
@@ -54,7 +54,7 @@ elif [[ "$ARCH" == armv7* ]]; then
 	coproc read -t 2 && wait "$!" || true
 	sudo ip link set $INTERFACE up
 
-	ret=$(sudo /root/PPPwn_orangepi/PPPwn/pppwn_armv7 --interface "$INTERFACE" --fw "${FIRMWAREVERSION//.}" --stage1 "/root/PPPwn_orangepi/PS4_stage_bin_all/PS4-$FIRMWAREVERSION/stage1/stage1.bin" --stage2 "/root/PPPwn_orangepi/PS4_stage_bin_all/PS4-$FIRMWAREVERSION/stage2/stage2.bin" --auto-retry)
+	ret=$(sudo /root/PPPwn_orangepi/PPPwn/pppwn_armv7 --interface "$INTERFACE" --fw "${FIRMWAREVERSION//.}" --stage1 "/root/PPPwn_orangepi/PS4_stage_bin_all/PS4-$FIRMWAREVERSION/stage1/stage1.bin" --stage2 "/root/PPPwn_orangepi/PS4_stage_bin_all/PS4-$FIRMWAREVERSION/stage2/stage2.bin" --timeout 10 --auto-retry)
 
 	if [ $SHUTDOWN = true ] ; then
 		echo -e "\033[32msystem poweroff\033[0m"

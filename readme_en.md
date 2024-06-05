@@ -9,6 +9,7 @@
 - 20240513 Newly created repositories support ARCH 64 devices by default
 - 20240514 Added support for x86 and cortex-a7 architectures, thanks again to xfangfang/PPPwn_cpp
 - 20240522 Added 10.00 10.01 goldehen support, modified 9.0 11.00 10.00 10.01 stage2.bin to support GoldHEN_v2.4b17.2 Thanks **sistr0**.To update the PPPwn_cpp process synchronously, please refer to `https://github.com/xfangfang/PPPwn_cpp.git` for the PPPwn_cpp update section.
+- 202440605 To update the PPPwn_cpp procedure, please refer to `https://github.com/xfangfang/PPPwn_cpp.git`for the PPPwn_cpp update section.
 
 # PPPwn orangepi
 

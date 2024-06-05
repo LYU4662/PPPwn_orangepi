@@ -10,6 +10,7 @@
 - 20240513 新创建仓库 默认支持aarch64架构设备
 - 20240514 增加x86、cortex-a7架构支持  再次感谢xfangfang/PPPwn_cpp
 - 20240522 增加10.00 10.01 goldehen支持，修改9.0 11.00 10.00 10.01的stage2.bin 用以支持GoldHEN_v2.4b17.2 感谢**sistr0** 。同步更新PPPwn_cpp程序，PPPwn_cpp更新部分请参考`https://github.com/xfangfang/PPPwn_cpp.git`
+- 20240605 更新PPPwn_cpp程序，PPPwn_cpp更新部分请参考`https://github.com/xfangfang/PPPwn_cpp.git`
 
 # PPPwn orangepi
 这个脚本初始测试于orangepi5 **debian**系统运行PPPwn漏洞，达到自动破解的效果。现支持x86、aarch64、armv7架构芯片, 其他系统应该要调整一下开机启动脚本。
